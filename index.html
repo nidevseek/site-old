@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  <link rel="stylesheet" href="Home/UI/Styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/FFFFFF/application-shield.png" type="image/x-icon">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zov.one/UpFJQ">
+  <meta property="og:title" content="portfolio nidenseek_">
+  <meta property="og:description" content="Hi, my name is Danya, I write Discord bots and sites, you can write to the bot in PM and I will do something for you.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/nidevseek/site/refs/heads/main/Home/Img/5303156293042827681_99.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <title>nidenseek_ portfolio</title>
+</head>
+<body>
+  <div class="wrapper">
+      <div id="giftOverlay" class="overlay hidden">
+        <div class="overlay-content">
+          <button onclick="toggleGiftOverlay()"><img class="icon_close" src="https://img.icons8.com/?size=100&id=8112&format=png&color=ffffff"></button>
+          <video class="gift_video" autoplay muted loop>
+            <source src="Home/Video/gift.mp4" type="video/mp4">
+            Недоступно
+          </video>
+          <div class="overlay_text">Received Gift</div>
+          <div class="overlay_description">You can keep this gift in Profile of convert it to 21 Stars</div>
+          <table>
+            <tr>
+              <th>From</th>
+              <td><img src="Home/Img/avatar_xaromie.jpg" class="icon_table"> Xaromie</td>
+            </tr>
+            <tr>
+              <th>Value</th>
+              <td><img src="Home/Img/stars.png" class="icon_table">25</td>
+            </tr>
+            <tr>
+              <th>Date</th>
+              <td>31/12/2024 at 6:21pm</td>
+            </tr>
+            <tr>
+              <th>Availability</th>
+              <td>128 564 of 400 000 left</td>
+            </tr>
+            <tr>
+              <td>🧡</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+    <div class="parent">
+      <div class="left">
+        <div class="Block">
+          <div class="text_name">{} time.ts</div>
+          <div id="current_time">loading...</div>
+          <div id="text_utc">loading...</div>
+        </div>
+
+        <div class="Block1">
+          <div class="text_name">{} date.ts</div>
+          <div id="current_date">loading...</div>
+          <div id="text_date">loading...</div>
+        </div>
+
+        <div class="Block2" onclick="openModal()">
+          <div class="text_name">▤ weather.json</div>
+          <div id="current_weather">loading...</div>
+          <div id="text_deheree">loading...</div>
+        </div>
+        
+        <div id="weatherModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>weather forecast</h2>
+            <div id="forecast">
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="Block_info">
+          <div class="text_name_info">&#9776; about.md</div>
+          <div class="avatar_info">
+            <img src="Home/Img/5303156293042827681_99.jpg">
+            <div id="text_hi">
+              Hi, I'm <div class="text_names">@nidenseek_</div>
+              <div class="buttons">
+                <div class="button">
+                  <img class="icon_info" src="https://img.icons8.com/fluency/100/javascript.png" alt="javascript"/>
+                  JavaScript
+                </div>
+                <div class="button2">
+                  <img class="icon_info" src="https://img.icons8.com/ios-filled/100/BBBBBB/domain.png" alt="web"/>
+                  Web
+                </div>
+                <div class="button">
+                  <img class="icon_info" src="https://img.icons8.com/sf-regular-filled/100/BBBBBB/code-file.png" alt="BDScript"/>
+                  BDScript 2
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description_info">
+            My name is Danya, I'm 16 years old, and I enjoy creating Discord bots and working on different types of projects. 
+            I'm currently learning JavaScript and improving my skills in web development. Recently, I built a website to gather resources, 
+            practice layout design, and explore modern web technologies. Although I'm still a beginner in some areas, I'm passionate about learning and constantly improving.
+          </div>
+          <div class="buttons1">
+            <div class="button1">
+              <a href="https://t.me/nidenseek" target="_blank">
+                <img class="icon_info1" src="https://img.icons8.com/ios-filled/100/BBBBBB/telegram.png" alt="telegram"/>
+              </a>
+              Telegram
+            </div>
+            <div class="button1">
+              <a href="https://discord.gg/uXuPPeSnrn" target="_blank">
+                <img class="icon_info1" src="https://img.icons8.com/ios-filled/100/BBBBBB/discord-logo.png" alt="discord"/>
+              </a>
+              Discord
+            </div>
+            <div class="button1">
+              <a href="https://www.twitch.tv/nidenseek_" target="_blank">
+                <img class="icon_info1" src="https://img.icons8.com/ios-filled/100/BBBBBB/twitch.png" alt="twitch"/>
+              </a>
+              Twitch
+            </div>
+            <div class="button1" onclick="toggleGiftOverlay()">
+              <img class="icon_stars" src="Home/Img/stars.png" alt="gifts"/>
+              Gift
+          </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="block_spotify">
+            <div class="text_name_info">▢ spotify.json</div>
+            <div id="trackInfo" class="track-card">
+              <div id="trackDetails">
+                <img id="albumCover" class="song_cover" src="https://img.icons8.com/?size=100&id=EHtxO8ZmA602&format=png&color=bbbbbb" alt="Album Cover">
+                <h2 id="trackName">Nothing's playing right now</h2>
+                <p id="artistName"><span>There could be a great artist here</span></p>
+                <p id="timeInfo">
+                  <span id="currentTime">0:00</span>/<span id="totalTime">0:00</span>
+                </p>
+                <div id="progressContainer">
+                  <div id="progressBar">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="Block_projects">
+          <div class="text_name_info">☁ about.md</div>
+          <div class="Block_projects_info">
+            <a href="https://nidevseek.github.io/projects/">
+            <div class="text_projects_info">▤ View projects</div>
+            <div class="description_projects_info">
+              All my projects are here, including personal and sites made to order.
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="Block_skill">
+          <div class="text_name_info">⊟ skills.md</div>
+          <div class="Block_skills">
+            <div class="text_skill">
+              <img class="icon_skill_info" src="https://img.icons8.com/sf-regular-filled/100/BBBBBB/code-file.png" alt="javascript"/>
+              BDScript 2
+            </div>
+            <div id="skill_active">
+              <div class="text_skill_avtive">Active</div>
+            </div>
+          </div>
+
+          <div class="Block_skills">
+            <div class="text_skill">
+              <img class="icon_skill_info" src="https://img.icons8.com/fluency/100/javascript.png" alt="javascript"/>
+              JavaScript
+            </div>
+            <div id="skill_processing">
+              <div class="text_skill_processing">In progress</div>
+            </div>
+          </div>
+
+          <div class="Block_skills">
+            <div class="text_skill">
+              <img class="icon_skill_info" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/discordjs/discordjs-plain.svg" alt="javascript"/>
+              Discord JS
+            </div>
+            <div id="skill_processing">
+              <div class="text_skill_processing">In progress</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <script src="Home/UI/JS/script.js"></script>
+  <script src="Home/UI/JS/spotify.js"></script>
+</body>
+</html>
